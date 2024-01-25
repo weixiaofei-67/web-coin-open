@@ -33,7 +33,8 @@ layui.use(function(){
             layer.alert("温馨提示" , {closeBtn : false , title : "必须手机打开" } )
             return 
         }
-        window.location.href='tronlink://'
+        alert("打开 tron ")
+        window.location.href='tronlink://';
     })
     
     
