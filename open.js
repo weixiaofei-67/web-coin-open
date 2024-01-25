@@ -26,8 +26,16 @@ layui.use(function(){
             layer.alert("温馨提示" , {closeBtn : false , title : "必须手机打开" } )
             return 
         }
-        window.location.href='okx://wallet/dapp/details?dappUrl='+open_url_encode
+        window.location.href='okx://wallet/dapp/details?dappUrl='+open_url
     })
+    $(".open_tron").click(function(){
+        if(!isMobile){
+            layer.alert("温馨提示" , {closeBtn : false , title : "必须手机打开" } )
+            return 
+        }
+        window.location.href='tronlink://'
+    })
+    
     
 });
 
