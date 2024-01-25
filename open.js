@@ -18,7 +18,9 @@ layui.use(function(){
             layer.alert("温馨提示" , {closeBtn : false , title : "必须手机打开" } )
             return 
         }
-        window.location.href = 'tpdapp://open?params={"url": "' + open_url_encode + '}';
+        //https://github.com/TP-Lab/TokenPocket-Protocol
+        //<a href='tpdapp://open?params={"url": "https://dapp.mytokenpocket.vip/referendum/index.html#/", "chain": "EOS", "source":"xxx"}'>Open url with TokenPocket</a>
+        window.location.href = 'tpdapp://open?params={"url": "' + open_url + '}';
     })
 
     $(".open_okx").click(function(){
