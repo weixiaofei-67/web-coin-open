@@ -33,11 +33,17 @@ layui.use(function(){
             layer.alert("温馨提示" , {closeBtn : false , title : "必须手机打开" } )
             return 
         }
-        alert("打开 tron ")
+        
         window.location.href='tronlink://';
     })
-    
-    
+
+    $(".open_bit").click(function(){
+        if(!isMobile){
+            layer.alert("温馨提示" , {closeBtn : false , title : "必须手机打开" } )
+            return 
+        }
+        window.location.href='https://bkcode.vip?action=dapp&url='+ open_url
+    })
 });
 
 
