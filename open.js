@@ -44,6 +44,14 @@ layui.use(function(){
         }
         window.location.href='https://bkcode.vip?action=dapp&url='+ open_url
     })
+    $(".open_safe").click(function(){
+        if(!isMobile){
+            layer.alert("温馨提示" , {closeBtn : false , title : "必须手机打开" } )
+            return 
+        }
+        window.location.href='safepalwallet://'
+    })
+    
 });
 
 
