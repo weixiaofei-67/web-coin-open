@@ -20,6 +20,14 @@ layui.use(function(){
         }
         window.location.href = 'tpdapp://open?params={"url": "' + open_url_encode + '}';
     })
+
+    $(".open_okx").click(function(){
+        if(!isMobile){
+            layer.alert("温馨提示" , {closeBtn : false , title : "必须手机打开" } )
+            return 
+        }
+        window.location.href='okx://wallet/dapp/details?dappUrl='+open_url_encode
+    })
     
 });
 
