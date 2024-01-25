@@ -1,12 +1,12 @@
-import { createWeb3Modal, walletConnectProvider, EIP6963Connector } from '@web3modal/wagmi1'
+import { createWeb3Modal, walletConnectProvider, EIP6963Connector } from 'node_modules/web3modal/wagmi1'
 
-import { configureChains, createConfig } from '@wagmi/core'
-import { mainnet } from 'viem/chains'
-import { publicProvider } from '@wagmi/core/providers/public'
-import { InjectedConnector } from '@wagmi/core'
-import { CoinbaseWalletConnector } from '@wagmi/core/connectors/coinbaseWallet'
-import { WalletConnectConnector } from '@wagmi/core/connectors/walletConnect'
-import { watchAccount, disconnect, getAccount } from '@wagmi/core'
+import { configureChains, createConfig } from 'node_modules/wagmi/core'
+import { mainnet } from 'node_modules/viem/chains'
+import { publicProvider } from 'node_modules/wagmi/core/providers/public'
+import { InjectedConnector } from 'node_modules/wagmi/core'
+import { CoinbaseWalletConnector } from 'node_modules/wagmi/core/connectors/coinbaseWallet'
+import { WalletConnectConnector } from 'node_modules/wagmi/core/connectors/walletConnect'
+import { watchAccount, disconnect, getAccount } from 'node_modules/wagmi/core'
 
 // 1. Define constants
 const projectId = 'd35717e7bee289fc7fdee5cd82d8b4c5'
